@@ -2,7 +2,8 @@ import React from 'react'
 import { RiReactjsLine, RiTailwindCssFill } from 'react-icons/ri'
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
-import { BiLogoPostgresql, BiLogoFlask, BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoFlask, BiLogoFirebase } from "react-icons/bi";
+import { DiRedis } from "react-icons/di";
 import { motion } from 'framer-motion'
 
 
@@ -53,7 +54,13 @@ const Technologies = () => {
             <BiLogoFlask className='text-7xl text-white'/>
         </motion.div>
         <motion.div variants={iconVariants(4)} initial='initial' animate='animate' className='rounded-2xl border-4 border-neutral-800 p-4'>
+            <BiLogoFirebase className='text-7xl text-orange-400'/>
+        </motion.div>
+        <motion.div variants={iconVariants(2)} initial='initial' animate='animate' className='rounded-2xl border-4 border-neutral-800 p-4'>
             <RiTailwindCssFill className='text-7xl text-sky-500'/>
+        </motion.div>
+        <motion.div variants={iconVariants(3.5)} initial='initial' animate='animate' className='rounded-2xl border-4 border-neutral-800 p-4'>
+            <DiRedis className='text-7xl text-red-500'/>
         </motion.div>
       </motion.div>
     </div>
